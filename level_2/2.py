@@ -20,10 +20,10 @@ cookie = {
     'Max-Age':'0', 
     'HoldTheDoor':'0'
 }
-URL = 'http://158.69.76.135/level1.php'
+URL = 'http://158.69.76.135/level2.php'
 votes = 0
 
-while votes < 4096:
-    r = requests.post(URL, data=payload, headers=header cookies=cookie)
+while votes < 1024:
+    r = requests.post(URL, data=payload, headers=header, cookies=cookie)
     votes += 1
     print("Votes: {}".format(votes))
